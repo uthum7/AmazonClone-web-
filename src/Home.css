@@ -1,13 +1,26 @@
-.home__slider{
+.home{
+  width: 100%;         /* Make the image width responsive to the parent container */
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;       
   position: relative;
+  
 }
-.image__list{
-   display: flex;
+.home__image{
+  height: 80vh;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -200px;
+  mask-image: linear-gradient(to bottom,rgb(0,0,0,1),rgb(0,0,0,0));
 }
-.image__item{
-  min-width: 100%;
+
+.home__row{
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  top: -100px; 
 }
-.image__item img{
-    width: 100%;
-    height: 100%;
+.product:first-child{
+  margin-right: -20px
 }
